@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>GenerarReporteDetalleWindow</class>
+    <widget class="QMainWindow" name="GenerarReporteDetalleWindow">
+        <property name="windowTitle">
+            <string>Generar Reporte Detalle</string>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>100</y>
+                <width>600</width>
+                <height>400</height>
+            </rect>
+        </property>
+        <widget class="QWidget" name="centralWidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QLabel" name="label_id_tutoria">
+                        <property name="text">
+                            <string>Ingresar ID Tutoria:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_id_tutoria"/>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="button_generar_reporte">
+                        <property name="text">
+                            <string>Generar Reporte</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QTableWidget" name="table"/>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="button_generar_pdf">
+                        <property name="text">
+                            <string>Generar PDF</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <connections/>
+</ui>

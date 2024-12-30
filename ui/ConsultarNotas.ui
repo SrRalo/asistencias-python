@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ConsultarNotasWindow</class>
+    <widget class="QMainWindow" name="ConsultarNotasWindow">
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>100</y>
+                <width>600</width>
+                <height>400</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Consultar Notas</string>
+        </property>
+
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QLabel" name="label_id_estudiante">
+                        <property name="text">
+                            <string>Ingrese el ID del Estudiante:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_id_estudiante">
+                        <property name="placeholderText">
+                            <string>Ejemplo: 1</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="button_consultar">
+                        <property name="text">
+                            <string>Consultar Notas</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <item>
+                    <widget class="QTableWidget" name="result_table">
+                        <property name="columnCount">
+                            <number>4</number>
+                        </property>
+                        <property name="horizontalHeaderLabels">
+                            <stringlist>
+                                <string>ID Estudiante</string>
+                                <string>Nombre</string>
+                                <string>Temario</string>
+                                <string>Calificación</string>
+                            </stringlist>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+</ui>

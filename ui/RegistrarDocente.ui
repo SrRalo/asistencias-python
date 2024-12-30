@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegistrarDocenteWindow</class>
+ <widget class="QMainWindow" name="RegistrarDocenteWindow">
+  <property name="geometry">
+   <rect>
+    <x>100</x>
+    <y>100</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Registrar Docente</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_nombre">
+      <property name="text">
+       <string>Nombre del Docente:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_nombre"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_apellido">
+      <property name="text">
+       <string>Apellido del Docente:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_apellido"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_correo">
+      <property name="text">
+       <string>Correo del Docente:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_correo"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_telefono">
+      <property name="text">
+       <string>Teléfono del Docente:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_telefono"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_guardar">
+      <property name="text">
+       <string>Registrar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>GenerarReporteGeneralWindow</class>
+    <widget class="QMainWindow" name="GenerarReporteGeneralWindow">
+        <property name="windowTitle">
+            <string>Generar Reporte General</string>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>100</y>
+                <width>600</width>
+                <height>400</height>
+            </rect>
+        </property>
+        <widget class="QWidget" name="centralWidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QLabel" name="label_id_estudiante">
+                        <property name="text">
+                            <string>ID Estudiante:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_id_estudiante"/>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="button_generar_reporte">
+                        <property name="text">
+                            <string>Generar Reporte</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QTableWidget" name="table"/>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="button_generar_pdf">
+                        <property name="text">
+                            <string>Generar PDF</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <connections/>
+</ui>

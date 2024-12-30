@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>RegistrarAsignaturaWindow</class>
+    <widget class="QMainWindow" name="RegistrarAsignaturaWindow">
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>100</y>
+                <width>300</width>
+                <height>300</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Registrar Asignatura</string>
+        </property>
+
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QLabel" name="label_nombre">
+                        <property name="text">
+                            <string>Nombre de la Asignatura:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_nombre"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_codigo">
+                        <property name="text">
+                            <string>Código:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_codigo"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_descripcion">
+                        <property name="text">
+                            <string>Descripción:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_descripcion"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_docente">
+                        <property name="text">
+                            <string>Seleccionar Docente:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QComboBox" name="combo_docente"/>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="button_registrar">
+                        <property name="text">
+                            <string>Registrar Asignatura</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+</ui>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>RegistrarAsignaturaWindow</class>
+    <widget class="QMainWindow" name="RegistrarAsignaturaWindow">
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>100</y>
+                <width>300</width>
+                <height>300</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Registrar Asignatura</string>
+        </property>
+
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QLabel" name="label_nombre">
+                        <property name="text">
+                            <string>Nombre de la Asignatura:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_nombre"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_codigo">
+                        <property name="text">
+                            <string>Código:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_codigo"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_descripcion">
+                        <property name="text">
+                            <string>Descripción:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_descripcion"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_docente">
+                        <property name="text">
+                            <string>Seleccionar Docente:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QComboBox" name="combo_docente"/>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="button_registrar">
+                        <property name="text">
+                            <string>Registrar Asignatura</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+</ui>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ConsultarTutoriaWindow</class>
+    <widget class="QMainWindow" name="ConsultarTutoriaWindow">
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>100</y>
+                <width>600</width>
+                <height>400</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Consultar Tutoria</string>
+        </property>
+
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QLabel" name="label_combo_fecha">
+                        <property name="text">
+                            <string>Seleccione una fecha de Tutoria:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QComboBox" name="combo_fecha"/>
+                </item>
+
+                <item>
+                    <widget class="QTableWidget" name="result_table">
+                        <property name="columnCount">
+                            <number>5</number>
+                        </property>
+                        <property name="horizontalHeaderLabels">
+                            <stringlist>
+                                <string>ID Docente</string>
+                                <string>Nombre Docente</string>
+                                <string>Temario</string>
+                                <string>Fecha Tutoria</string>
+                                <string>Hora Tutoria</string>
+                            </stringlist>
+                        </property>
+                    </widget>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="button_consultar">
+                        <property name="text">
+                            <string>Consultar</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+</ui>

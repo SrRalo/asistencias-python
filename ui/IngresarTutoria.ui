@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IngresarTutoriaWindow</class>
+ <widget class="QMainWindow" name="IngresarTutoriaWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ingresar Tutoria</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_docente">
+      <property name="text">
+       <string>Seleccione el Docente:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="combo_docente"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_fecha">
+      <property name="text">
+       <string>Fecha de la Tutoria:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDateEdit" name="input_fecha">
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_hora">
+      <property name="text">
+       <string>Hora de la Tutoria:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTimeEdit" name="input_hora"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_temario">
+      <property name="text">
+       <string>Temario:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="input_temario"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_observacion">
+      <property name="text">
+       <string>Observación:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="input_observacion"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_guardar">
+      <property name="text">
+       <string>Registrar Tutoria</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

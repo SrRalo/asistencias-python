@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>IngresarNotasWindow</class>
+    <widget class="QMainWindow" name="IngresarNotasWindow">
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>100</y>
+                <width>500</width>
+                <height>400</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Ingresar Notas</string>
+        </property>
+
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QLabel" name="label_estudiante">
+                        <property name="text">
+                            <string>Seleccione el Estudiante:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QComboBox" name="combo_estudiante"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_tutoria">
+                        <property name="text">
+                            <string>Seleccione la Tutoria:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QComboBox" name="combo_tutoria"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_observaciones">
+                        <property name="text">
+                            <string>Observaciones:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QTextEdit" name="input_observaciones"/>
+                </item>
+
+                <item>
+                    <widget class="QLabel" name="label_calificacion">
+                        <property name="text">
+                            <string>Calificación:</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="input_calificacion">
+                        <property name="placeholderText">
+                            <string>Ejemplo: 8.50</string>
+                        </property>
+                    </widget>
+                </item>
+
+                <item>
+                    <widget class="QPushButton" name="button_guardar">
+                        <property name="text">
+                            <string>Registrar Nota</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+</ui>

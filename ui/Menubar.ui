@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menubar</class>
+ <widget class="QMainWindow" name="Menubar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Asistencias</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #53C8DB;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #fff</string>
+   </property>
+   <widget class="QMenu" name="menuRegistrar">
+    <property name="title">
+     <string>Registrar</string>
+    </property>
+    <addaction name="actionRegistrar_Docente"/>
+    <addaction name="actionRegistrar_Estudiante"/>
+    <addaction name="actionRegistrar_Tutor"/>
+    <addaction name="actionRegistrar_Asignatura"/>
+   </widget>
+   <widget class="QMenu" name="menuIngresar">
+    <property name="title">
+     <string>Ingresar</string>
+    </property>
+    <addaction name="actionIngresar_Tutoria"/>
+    <addaction name="actionIngresar_Notas"/>
+   </widget>
+   <widget class="QMenu" name="menuConsultar">
+    <property name="title">
+     <string>Consultar</string>
+    </property>
+    <addaction name="actionConsultar_Tutoria"/>
+    <addaction name="actionConsultar_Notas"/>
+   </widget>
+   <widget class="QMenu" name="menuReporte">
+    <property name="title">
+     <string>Reporte</string>
+    </property>
+    <addaction name="actionGenerar_Reporte_General"/>
+    <addaction name="actionGenerar_Reporte_Detalle"/>
+   </widget>
+   <widget class="QMenu" name="menuSesi_n">
+    <property name="title">
+     <string>Sesión</string>
+    </property>
+    <addaction name="actionCerrar_Sesi_n"/>
+    <addaction name="actionAadministrar_Usuarios"/>
+   </widget>
+   <addaction name="menuRegistrar"/>
+   <addaction name="menuIngresar"/>
+   <addaction name="menuConsultar"/>
+   <addaction name="menuReporte"/>
+   <addaction name="menuSesi_n"/>
+  </widget>
+  <action name="actionRegistrar_Docente">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Registrar Docente</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionRegistrar_Estudiante">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Registrar Estudiante</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Tutor">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Registrar Tutor</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Asignatura">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Registrar Asignatura</string>
+   </property>
+  </action>
+  <action name="actionIngresar_Tutoria">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Ingresar Tutoria</string>
+   </property>
+  </action>
+  <action name="actionIngresar_Notas">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Ingresar Notas</string>
+   </property>
+  </action>
+  <action name="actionConsultar_Tutoria">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Consultar Tutoria</string>
+   </property>
+  </action>
+  <action name="actionConsultar_Notas">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Consultar Notas</string>
+   </property>
+  </action>
+  <action name="actionGenerar_Reporte_General">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Generar Reporte General</string>
+   </property>
+  </action>
+  <action name="actionGenerar_Reporte_Detalle">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Generar Reporte Detalle</string>
+   </property>
+  </action>
+  <action name="actionCerrar_Sesi_n">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Cerrar Sesión</string>
+   </property>
+  </action>
+  <action name="actionAadministrar_Usuarios">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Administrar Usuarios</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

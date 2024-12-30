@@ -1,0 +1,94 @@
+permisos de rol docente:
+-registrar docente
+-ingresar tutoria
+-ingresar notas
+-consultar notas
+-consultar progreso
+-generar reporte general
+-generar reporte detalle
+
+permisos de rol estudiante:
+-registrar estudiante
+-ingresar tutoria
+-consultar tutoria
+
+permisos de rol tutor:
+-registrar tutor
+-ingresar tutoria
+-consultar tutoria
+-consultar notas
+
+
+
+en Ingresar desplegar:
+-ingresar tutoria
+-ingresar notas
+
+en Consultar desplegar:
+-consultar tutoria
+-consultar notas
+
+en Reporte desplegar:
+-generar reporte general
+-generar reporte detalle
+
+
+
+        # Menús principales
+        self.menuRegistrar = QtWidgets.QMenu("Registrar", self.menubar)
+        self.menuIngresar = QtWidgets.QMenu("Ingresar", self.menubar)
+        self.menuConsultar = QtWidgets.QMenu("Consultar", self.menubar)
+        self.menuReporte = QtWidgets.QMenu("Reporte", self.menubar)
+        self.menuSesion = QtWidgets.QMenu("Sesión", self.menubar)
+
+        # Submenús para "Registrar"
+        self.actionRegistrarDocente = QtWidgets.QAction("Registrar Docente", self)
+        self.actionRegistrarEstudiante = QtWidgets.QAction("Registrar Estudiante", self)
+        self.actionRegistrarTutor = QtWidgets.QAction("Registrar Tutor", self)
+        self.actionRegistrarAsignatura = QtWidgets.QAction("Registrar Asignatura", self)
+
+        # Submenús para "Ingresar"
+        self.actionIngresarMaterial = QtWidgets.QAction("Ingresar Tutoria", self)
+        self.actionIngresarNotas = QtWidgets.QAction("Ingresar Notas", self)
+
+        # Submenús para "Consultar"
+        self.actionConsultarMaterial = QtWidgets.QAction("Consultar Tutoria", self)
+        self.actionConsultarNotas = QtWidgets.QAction("Consultar Notas", self)
+
+        # Submenús para "Reporte"
+        self.actionGenerarReporteGeneral = QtWidgets.QAction("Generar Reporte General", self)
+        self.actionGenerarReporteDetalle = QtWidgets.QAction("Generar Reporte Detalle", self)
+
+        # Agrega las acciones al menú Registrar
+        self.menuRegistrar.addAction(self.actionRegistrarDocente)
+        self.menuRegistrar.addAction(self.actionRegistrarEstudiante)
+        self.menuRegistrar.addAction(self.actionRegistrarTutor)
+        self.menuRegistrar.addAction(self.actionRegistrarAsignatura)
+
+        # Agregar las acciones al menú Ingresar
+        self.menuIngresar.addAction(self.actionIngresarMaterial)
+        self.menuIngresar.addAction(self.actionIngresarNotas)
+
+        # Agregar las acciones al menú Consultar
+        self.menuConsultar.addAction(self.actionConsultarMaterial)
+        self.menuConsultar.addAction(self.actionConsultarNotas)
+
+        # Agregar las acciones al menú Reporte
+        self.menuReporte.addAction(self.actionGenerarReporteGeneral)
+        self.menuReporte.addAction(self.actionGenerarReporteDetalle)
+
+        # Conectar acciones a métodos
+        #
+        self.actionRegistrarDocente.triggered.connect(self.abrir_registrar_docente)
+        self.actionRegistrarEstudiante.triggered.connect(self.abrir_registrar_estudiante)
+        self.actionRegistrarTutor.triggered.connect(self.abrir_registrar_tutor)
+        self.actionRegistrarAsignatura.triggered.connect(self.abrir_registrar_asignatura) 
+        #
+        self.actionIngresarMaterial.triggered.connect(self.abrir_ingresar_material)
+        self.actionIngresarNotas.triggered.connect(self.abrir_ingresar_notas)
+        #
+        self.actionConsultarMaterial.triggered.connect(self.abrir_consultar_material)
+        self.actionConsultarNotas.triggered.connect(self.abrir_consultar_notas)
+        #
+        self.actionGenerarReporteGeneral.triggered.connect(self.generar_reporte_general)
+        self.actionGenerarReporteDetalle.triggered.connect(self.generar_reporte_detalle)
